@@ -1,5 +1,5 @@
 fastapi==0.75.0
-google-search-results
+google_search_results==2.4.1
 googletrans==3.1.0a0
 pydantic==1.8.2
 requests==2.26.0
