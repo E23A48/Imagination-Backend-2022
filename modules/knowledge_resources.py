@@ -113,7 +113,8 @@ def getCandidateImages(queries, n = 4, model_name="COCO"):
     
   model = ClipCaptionModel(prefix_length)
 
-  coco_weight = hf_hub_download(repo_id="akhaliq/CLIP-prefix-captioning-COCO-weights", filename="coco_weights.pt")
+  conceptual_weight = "/home/www/imagination/models/conceptual_weights.pt"
+  coco_weight = "/home/www/imagination/models/coco_weights.pt"
 
   if model_name == "COCO":
     model_path = coco_weight
@@ -170,7 +171,8 @@ def getCandidateImagesContentBased(imgs, n = 4, model_name="COCO"):
     
   model = ClipCaptionModel(prefix_length)
 
-  coco_weight = hf_hub_download(repo_id="akhaliq/CLIP-prefix-captioning-COCO-weights", filename="coco_weights.pt")
+  conceptual_weight = "/home/www/imagination/models/conceptual_weights.pt"
+  coco_weight = "/home/www/imagination/models/coco_weights.pt"
 
   if model_name == "COCO":
     model_path = coco_weight
